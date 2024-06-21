@@ -3,7 +3,7 @@ exports.up = function (knex) {
     table.uuid('id').primary();
     table.text('url').notNullable();
     table.timestamp('created_at').defaultTo(knex.fn.now());
-    table.uuid('note_id').references('id').inTable('notes').notNullable();
+    table.uuid('note_id').references('id').inTable('notes').onDelete('CASCADE');
   });
 };
 

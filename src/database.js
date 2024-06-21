@@ -5,7 +5,7 @@ const config = {
   connection: {
     filename: './db/app.db',
   },
-  useNullAsDefault: true,
+  useNullAsDefault: false,
   migrations: {
     directory: './db/migrations',
   },

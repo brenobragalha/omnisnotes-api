@@ -1,0 +1,24 @@
+meta {
+  name: Update
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://localhost:3000/users/:id
+  body: json
+  auth: none
+}
+
+params:path {
+  id: 
+}
+
+body:json {
+  {
+    "name": "John Doe",
+    "email": "johndoe1@example.com",
+    "oldPassword": "123456",
+    "password": "12345"
+  }
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/notes/:user_id
+  body: json
+  auth: none
+}
+
+params:path {
+  user_id: 
+}
+
+body:json {
+  {
+    "title": "Note",
+    "description": "Description",
+    "tags": ["tag1", "tag2"],
+    "links": ["link1", "link2"]
+  }
+}

@@ -135,3 +135,6 @@ build
 
 # Database
 db/*.db
+
+# IDE
+.idea/
